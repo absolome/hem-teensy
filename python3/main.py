@@ -1,5 +1,3 @@
-#!python3
-
 # Main program to read data from the Teensy and prints it to a terminal.
 # Demonstrates how to use the memcard driver.
 

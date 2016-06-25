@@ -1,8 +1,8 @@
-# just a module containing dictionaries to reference
+"""A few dictionaries used to translate raw memory reads into displayable data"""
 
 
 # This is the characters internal ID, converted to decimal
-characters = {
+CHARACTERS = {
     0:	'Mario',
     1:	'Fox',
     2:	'Captain Falcon',
@@ -39,7 +39,7 @@ characters = {
 }
 
 # I'm not sure whether to use internal or external ID here, this is internal
-stages = {
+STAGES = {
     2:    'Princess Peach\'s Castle',
     3:    'Rainbow Cruise',
     4:    'Kongo Jungle',
@@ -72,8 +72,8 @@ stages = {
 }
 
 # list of in game action states by ID (using decimal ID)
-# TODO: These are not the correct IDs past 0x155, fix those
-actionstates = {
+# TODO: Create module to fix ID matching past 0x155
+ACTIONSTATES = {
     0:	    'DeadDown',
     1:	    'DeadLeft',
     2:	    'DeadRight',
@@ -460,7 +460,7 @@ actionstates = {
 }
 
 # table of stage dimensions via Kadano
-# Name	← bound | → bound | ↑ bound | ↓ bound
+# Name	<- bound | -> bound | upper bound | lower bound
 # YS	-175.70    173.60	 168.00	   -91.00
 # FD	-246.00    246.00    188.00	   -140.00
 # FoD	-198.75    198.75	 202.50	   -146.25
@@ -476,7 +476,7 @@ actionstates = {
 # BF    27.20   	54.40   	-68.40  	68.40
 # #PS   25.00       0.00    	-87.75  	87.75
 
-stages = {
+STAGES = {
     'YS': {
         'blast-l': -175.70,
         'blast-r': 173.60,
